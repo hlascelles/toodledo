@@ -1336,7 +1336,7 @@ module Toodledo
         return nil
       end
 
-      if length.is_a?(Integer)
+      if !length.is_a?(Integer)
         raise "Invalid length value: #{length}"
       end
 
