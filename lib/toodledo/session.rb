@@ -693,6 +693,9 @@ module Toodledo
       # Goal handling
       handle_goal(myhash, params)
 
+      # startdate handling.  Take either a string or a Time object.'YYYY-MM-DD'
+      handle_date(myhash, params, :startdate)
+
       # duedate handling.  Take either a string or a Time object.'YYYY-MM-DD'
       handle_date(myhash, params, :duedate)
 
